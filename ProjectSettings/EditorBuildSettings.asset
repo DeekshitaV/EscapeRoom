@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/IntroScene/Scenes/Login.unity
     guid: 45c616d4846206446aa592602662f62a
+  - enabled: 1
+    path: Assets/SpaceStone/Sci-Fi Styled Modular Pack/scenes/SpaceStone.unity
+    guid: e8cf1d29775c7e24f9dd35148a6437c0
   m_configObjects: {}
