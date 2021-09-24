@@ -49,7 +49,7 @@ namespace DatabaseAPI.Account
             //Note: Setting title Id here can be skipped if you have set the value in Editor Extensions already.
             if (string.IsNullOrEmpty(PlayFabSettings.TitleId))
             {
-                PlayFabSettings.TitleId = "C9C63"; // Please change this value to your own titleId from Account Manager Window
+                PlayFabSettings.TitleId = "C751E"; // Please change this value to your own titleId from Account Manager Window
             }
 
             // Auto Login Condition
