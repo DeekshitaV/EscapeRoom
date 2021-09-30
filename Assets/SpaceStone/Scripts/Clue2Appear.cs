@@ -7,7 +7,7 @@ namespace SpaceCodes
 {
     public class Clue2Appear : MonoBehaviour
     {
-
+        public MouseLook mouse;
         [SerializeField]
         private Image clue2Img;
         // Start is called before the first frame update
@@ -16,6 +16,7 @@ namespace SpaceCodes
             if (other.CompareTag("Player"))
             {
                 clue2Img.enabled = true;
+                mouse.enabled = false;
             }
         }
 
@@ -24,6 +25,7 @@ namespace SpaceCodes
             if (other.CompareTag("Player"))
             {
                 clue2Img.enabled = false;
+                mouse.enabled = true;
             }
         }
     }

@@ -17,12 +17,12 @@ namespace SpaceCodes
             if (other.CompareTag("Player"))
             {
                 mouse.enabled = false;
-                //ShowCursor();
-                Door1Img.SetActive(true);
-                //if (Input.GetKeyDown(KeyCode.Escape))
-                //{
-                //  HideCursor();
-                //}
+                ShowCursor();
+               
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                 HideCursor();
+                }
             }
         }
 
@@ -32,7 +32,7 @@ namespace SpaceCodes
             {
                 mouse.enabled = true;
                 Door1Img.SetActive(false);
-                // HideCursor();
+                 HideCursor();
             }
         }
 
