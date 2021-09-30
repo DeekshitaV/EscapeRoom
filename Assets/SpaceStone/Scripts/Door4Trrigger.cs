@@ -13,13 +13,18 @@ public class Door4Trrigger : MonoBehaviour
     public MouseLook mouse;
     public GameObject door4img;
     public BoxCollider box;
+    public AudioSource Door4;
+    public AudioSource Correct;
+    public AudioSource Incorrect;
     string input;
- [SerializeField] private Animator MyAnimationController;
+
+    [SerializeField] private Animator MyAnimationController;
     public void onSubmit()
     {
         input = answer.text;
         if (input.ToUpper() == actualAns.ToUpper())
         {
+            Correct.Play();
             box.enabled = false;
              //   door.SetActive(false);
             door4img.SetActive(false);
@@ -29,10 +34,13 @@ public class Door4Trrigger : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             mouse.enabled = true;
+            Door4.Play();
         }
         else
+        {
             Debug.Log(input.ToUpper());
-
+            Incorrect.Play();
+        }
     }
 
 }

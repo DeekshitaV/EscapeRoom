@@ -12,6 +12,10 @@ namespace SpaceCodes
         public GameObject door;
         public MouseLook mouse;
         public GameObject door2img;
+        public AudioSource Door1_3;
+        public AudioSource Correct;
+        public AudioSource Incorrect;
+
         //  [SerializeField] private Animator MyAnimationController;
         string input;
 
@@ -20,6 +24,7 @@ namespace SpaceCodes
             input = answer.text;
             if (input.ToUpper() == actualAns.ToUpper())
             {
+                Correct.Play();
                 door.SetActive(false);
                 door2img.SetActive(false);
                 Debug.Log("You did it!");
@@ -27,10 +32,13 @@ namespace SpaceCodes
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 mouse.enabled = true;
+                Door1_3.Play();
             }
             else
+            {
                 Debug.Log(input.ToUpper());
-
+                Incorrect.Play();
+            }
         }
 
     }
