@@ -7,7 +7,7 @@ namespace SpaceCodes
 {
     public class DoorPopUp : MonoBehaviour
     {
-
+        public MouseLook mouse;
 
         [SerializeField]
         private GameObject Door1Img;
@@ -16,12 +16,13 @@ namespace SpaceCodes
         {
             if (other.CompareTag("Player"))
             {
-
-                ShowCursor();
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    HideCursor();
-                }
+                mouse.enabled = false;
+                //ShowCursor();
+                Door1Img.SetActive(true);
+                //if (Input.GetKeyDown(KeyCode.Escape))
+                //{
+                //  HideCursor();
+                //}
             }
         }
 
@@ -29,8 +30,9 @@ namespace SpaceCodes
         {
             if (other.CompareTag("Player"))
             {
-
-                HideCursor();
+                mouse.enabled = true;
+                Door1Img.SetActive(false);
+                // HideCursor();
             }
         }
 
@@ -47,7 +49,7 @@ namespace SpaceCodes
         public void HideCursor()
         {
 
-            Door1Img.SetActive(false);
+           
 
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;

@@ -24,6 +24,8 @@ namespace SpaceCodes
                 door2img.SetActive(false);
                 Debug.Log("You did it!");
                 // MyAnimationController.SetBool("open", true);
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
 
             }
             else
