@@ -3219,7 +3219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Be SIRIUS to open me
+  m_text: Derivative of 4x^2 at x=2?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 59ffc184ad998cc4d90d87905c96a10a, type: 2}
   m_sharedMaterial: {fileID: -807023269816307570, guid: 59ffc184ad998cc4d90d87905c96a10a,
@@ -5346,7 +5346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 799907910}
-  actualAns: Alohomora
+  actualAns: 16
   door: {fileID: 1206960816}
   mouse: {fileID: 961560621}
   door2img: {fileID: 406003391}
@@ -8569,9 +8569,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'May the odds be ever in your favour
-
-'
+  m_text: (12+3)%3?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 59ffc184ad998cc4d90d87905c96a10a, type: 2}
   m_sharedMaterial: {fileID: -807023269816307570, guid: 59ffc184ad998cc4d90d87905c96a10a,
@@ -19590,7 +19588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: {fileID: 1144321268}
-  actualAns: katniss
+  actualAns: 0
   door: {fileID: 453004742}
   mouse: {fileID: 961560621}
   door4img: {fileID: 1793704335}
