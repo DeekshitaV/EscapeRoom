@@ -6795,6 +6795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7318cf5af3fe3f8428b1fc48aedddd8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouse: {fileID: 1551684793}
   answers:
   - 7
   - 6944
@@ -15394,6 +15395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba4508511855aa24a915f732873d6d81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouse: {fileID: 1551684793}
   Door1Img: {fileID: 749299118}
 --- !u!4 &696265095 stripped
 Transform:
@@ -19607,6 +19609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba4508511855aa24a915f732873d6d81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouse: {fileID: 1551684793}
   Door1Img: {fileID: 749299118}
 --- !u!65 &857741756
 BoxCollider:
@@ -21985,6 +21988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba4508511855aa24a915f732873d6d81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouse: {fileID: 1551684793}
   Door1Img: {fileID: 749299118}
 --- !u!65 &949708845
 BoxCollider:
@@ -37774,6 +37778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba4508511855aa24a915f732873d6d81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouse: {fileID: 1551684793}
   Door1Img: {fileID: 749299118}
 --- !u!65 &1600407275
 BoxCollider:

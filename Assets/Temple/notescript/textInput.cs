@@ -7,6 +7,7 @@ namespace Temple
 {
     public class textInput : MonoBehaviour
     {
+        public MouseLook mouse;
 
         public string[] answers;
         public InputField[] inputField;
@@ -24,6 +25,8 @@ namespace Temple
                 doors[0].SetActive(false);
                 DoorImg[0].SetActive(false);
                 inputField[0].text = "";
+                mouse.enabled = true;
+                Cursor.visible = false;
             }
         }
         public void OnClickClue2()
@@ -35,6 +38,8 @@ namespace Temple
                 doors[1].SetActive(false);
                 DoorImg[1].SetActive(false);
                 inputField[1].text = "";
+                mouse.enabled = true;
+                Cursor.visible = false;
             }
         }
         public void OnClickClue3()
@@ -45,6 +50,8 @@ namespace Temple
                 doors[2].SetActive(false);
                 DoorImg[2].SetActive(false);
                 inputField[2].text = "";
+                mouse.enabled = true;
+                Cursor.visible = false;
             }
         }
         public void OnClickClue4()
@@ -55,6 +62,8 @@ namespace Temple
                 doors[3].SetActive(false);
                 DoorImg[3].SetActive(false);
                 inputField[3].text = "";
+                mouse.enabled = true;
+                Cursor.visible = false;
             }
         }
 

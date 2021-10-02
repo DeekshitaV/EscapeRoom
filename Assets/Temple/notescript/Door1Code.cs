@@ -7,7 +7,7 @@ namespace Temple
 {
     public class Door1Code : MonoBehaviour
     {
-
+        public MouseLook mouse;
 
         [SerializeField]
         private GameObject Door1Img;
@@ -16,8 +16,10 @@ namespace Temple
         {
             if (other.CompareTag("Player"))
             {
-
+                mouse.enabled = false;
+                Door1Img.SetActive(true);
                 ShowCursor();
+
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
                     HideCursor();
@@ -29,7 +31,8 @@ namespace Temple
         {
             if (other.CompareTag("Player"))
             {
-
+                mouse.enabled = true;
+                Door1Img.SetActive(false);
                 HideCursor();
             }
         }
@@ -38,7 +41,7 @@ namespace Temple
         public void ShowCursor()
         {
 
-            Door1Img.SetActive(true);
+         //   Door1Img.SetActive(true);
 
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -47,7 +50,7 @@ namespace Temple
         public void HideCursor()
         {
 
-            Door1Img.SetActive(false);
+          //  Door1Img.SetActive(false);
 
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
