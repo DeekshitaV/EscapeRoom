@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SpaceStone/Sci-Fi Styled Modular Pack/scenes/SpaceStone.unity
     guid: e8cf1d29775c7e24f9dd35148a6437c0
+  - enabled: 1
+    path: Assets/Temple/Scenes/Temple.unity
+    guid: cf2fb857fc81822478e555c226f402ab
+  - enabled: 1
+    path: Assets/SpaceRoom/Scenes/Space.unity
+    guid: 0b0403de45d31496f8b90f72b42b0ba0
   m_configObjects: {}
