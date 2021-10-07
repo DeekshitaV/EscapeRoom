@@ -1,34 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class NoteAppear : MonoBehaviour
+namespace SpaceRoom
 {
-  
-    public GameObject _noteImage;
-    public  MouseLook mouseLook;
-
-    void OnTriggerEnter(Collider other)
+    public class NoteAppear : MonoBehaviour
     {
-        if (other.CompareTag("Player"))
+
+        public GameObject _noteImage;
+        public MouseLook mouseLook;
+
+        void OnTriggerEnter(Collider other)
         {
-            _noteImage.SetActive(true);
-            mouseLook.enabled = false;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            if (other.CompareTag("Player"))
+            {
+                _noteImage.SetActive(true);
+                mouseLook.enabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+
         }
 
-    }
 
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        void OnTriggerExit(Collider other)
         {
-            _noteImage.SetActive(false);
-            mouseLook.enabled = true;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = true;
+            if (other.CompareTag("Player"))
+            {
+                _noteImage.SetActive(false);
+                mouseLook.enabled = true;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = true;
+            }
         }
     }
 }

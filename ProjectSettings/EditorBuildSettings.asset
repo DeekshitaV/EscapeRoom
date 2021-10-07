@@ -12,12 +12,18 @@ EditorBuildSettings:
     path: Assets/IntroScene/Scenes/Login.unity
     guid: 45c616d4846206446aa592602662f62a
   - enabled: 1
-    path: Assets/SpaceStone/Sci-Fi Styled Modular Pack/scenes/SpaceStone.unity
+    path: Assets/IntroScene/SpaceStone.unity
     guid: e8cf1d29775c7e24f9dd35148a6437c0
   - enabled: 1
-    path: Assets/Temple/Scenes/Temple.unity
+    path: Assets/IntroScene/Temple.unity
     guid: cf2fb857fc81822478e555c226f402ab
   - enabled: 1
-    path: Assets/SpaceRoom/Scenes/Space.unity
+    path: Assets/IntroScene/Space.unity
     guid: 0b0403de45d31496f8b90f72b42b0ba0
+  - enabled: 1
+    path: Assets/IntroScene/NewYork.unity
+    guid: 7b533dfe561bc47c8975c955fe4ef3d3
+  - enabled: 1
+    path: Assets/IntroScene/ThankYou.unity
+    guid: 6066f8da23f1d804b8df2b2250473d63
   m_configObjects: {}

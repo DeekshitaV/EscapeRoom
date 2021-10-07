@@ -97,10 +97,10 @@ public class Keypad : MonoBehaviour
             {
                 ShowCursor();
                 mouseLook.enabled = false;
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    HideCursor();
-                }
+                /*    if (Input.GetKeyDown(KeyCode.Escape))
+                    {
+                        HideCursor();
+                    }*/
 
                 GUI.skin.box.normal.textColor = Color.cyan;
                 GUI.backgroundColor = Color.cyan;
