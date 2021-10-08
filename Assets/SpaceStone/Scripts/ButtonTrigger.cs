@@ -1,13 +1,14 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace SpaceCodes
 {
     public class ButtonTrigger : MonoBehaviour
     {
-        public InputField answer;
+    public InputField answer;
         public string actualAns;
         public GameObject door;
         public MouseLook mouse;
@@ -15,13 +16,14 @@ namespace SpaceCodes
         public AudioSource Door1_3;
         public AudioSource Correct;
         public AudioSource Incorrect;
+       
 
         //  [SerializeField] private Animator MyAnimationController;
         string input;
 
         public void onSubmit()
         {
-            input = answer.text;
+            input =answer.text; 
             if (input.ToUpper() == actualAns.ToUpper())
             {
                 Correct.Play();
@@ -37,6 +39,7 @@ namespace SpaceCodes
             else
             {
                 Debug.Log(input.ToUpper());
+                Debug.Log(actualAns.ToUpper());
                 Incorrect.Play();
             }
         }

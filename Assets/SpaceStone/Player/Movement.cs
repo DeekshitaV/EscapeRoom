@@ -8,7 +8,7 @@ namespace SpaceCodes
         [SerializeField] CharacterController controller;
         [SerializeField] float speed = 11f;
         Vector2 horizontalInput;
-        public AudioSource foot;
+      //  public AudioSource foot;
 
         [SerializeField] float jumpHeight = 3.5f;
         bool jump;
@@ -28,7 +28,7 @@ namespace SpaceCodes
 
             Vector3 horizontalVelocity = (transform.right * horizontalInput.x + transform.forward * horizontalInput.y) * speed;
             controller.Move(horizontalVelocity * Time.deltaTime);
-            foot.Play();
+         //   foot.Play();
             
             // Jump: v = sqrt(-2 * jumpHeight * gravity)
             if (jump)

@@ -7,13 +7,13 @@ namespace SpaceCodes{
     {
         [SerializeField] private Animator MyAnimationController;
 
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Player"))
-            {
-                MyAnimationController.SetBool("char_nearby", true);
-                MyAnimationController.SetBool("char_nearby", true);
-            }
-        }
+        // private void OnTriggerEnter(Collider other)
+        // {
+        //     if (other.CompareTag("Player"))
+        //     {
+        //         MyAnimationController.SetBool("char_nearby", true);
+        //         MyAnimationController.SetBool("char_nearby", true);
+        //     }
+        // }
     }
 }
