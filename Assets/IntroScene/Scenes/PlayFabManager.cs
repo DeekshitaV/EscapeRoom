@@ -10,7 +10,12 @@ public class PlayFabManager : MonoBehaviour
     public Text messageText;
     public InputField emailInput;
     public InputField passwordInput;
-   
+
+    private void Start()
+    {
+        SceneChanger.OnUpdate += SendLeaderboard;
+    }
+
     public void LoginButton()
     {
         var request = new LoginWithEmailAddressRequest
@@ -49,7 +54,7 @@ public class PlayFabManager : MonoBehaviour
         messageText.text = error.ErrorMessage;
     }
 
-    public void SendLeaderboard()
+    public void SendLeaderboard(int stone)
     {
         var request = new UpdatePlayerStatisticsRequest
         {
@@ -58,7 +63,7 @@ public class PlayFabManager : MonoBehaviour
                 new StatisticUpdate
                 {
                     StatisticName = "Stones",
-                    Value = 4
+                    Value = stone
                 }
             }
         };

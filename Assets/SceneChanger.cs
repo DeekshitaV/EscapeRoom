@@ -6,9 +6,13 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     // Start is called before the first frame update
+    public delegate void ScoreUpdate(int value);
+    public static event ScoreUpdate OnUpdate;
+
     public GameObject panel;
     public GameObject[] stones;
     int scene ;
+
     private void Start()
     {
         Cursor.visible = false;
@@ -20,11 +24,14 @@ public class SceneChanger : MonoBehaviour
         panel.SetActive(false);
     }
 
+    [System.Obsolete]
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
+            Application.ExternalEval("window.open('https://www.hackerrank.com/')");
             OpenPanel();
+            OnUpdate(scene - 1);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
