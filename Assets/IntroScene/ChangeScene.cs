@@ -13,8 +13,16 @@ public class ChangeScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        videoPlayer1.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Marvel Opening Theme.mp4");
+        videoPlayer2.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Jarvis.mp4");
         videoPlayer1.loopPointReached += activatePlayer2;
         videoPlayer2.loopPointReached += changeScene;
+    }
+
+    public void activatePlayer1(GameObject button)
+    {
+        button.SetActive(false);
+        videoPlayer1.Play();
     }
 
     void activatePlayer2(UnityEngine.Video.VideoPlayer vp)
