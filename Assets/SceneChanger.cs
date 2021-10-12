@@ -8,7 +8,7 @@ public class SceneChanger : MonoBehaviour
     // Start is called before the first frame update
     public delegate void ScoreUpdate(int value);
     public static event ScoreUpdate OnUpdate;
-
+    public MouseLook mouseLook;
     public GameObject panel;
     public GameObject[] stones;
     int scene ;
@@ -29,6 +29,7 @@ public class SceneChanger : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
+            mouseLook.enabled = false;
             Application.ExternalEval("window.open('https://www.hackerrank.com/')");
             OpenPanel();
             OnUpdate(scene - 1);

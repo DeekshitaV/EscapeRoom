@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2412,7 +2412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464d44d2ac11b1a4e8d798612150d216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouse: {fileID: 961560621}
+  mouse: {fileID: 0}
   Door1Img: {fileID: 1793704335}
 --- !u!64 &314683092
 MeshCollider:
@@ -8065,7 +8065,6 @@ GameObject:
   - component: {fileID: 961560624}
   - component: {fileID: 961560623}
   - component: {fileID: 961560622}
-  - component: {fileID: 961560625}
   - component: {fileID: 961560621}
   - component: {fileID: 961560620}
   m_Layer: 0
@@ -8084,7 +8083,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 961560619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2259ec241de8e146abc532d16187f9f, type: 3}
+  m_Script: {fileID: 11500000, guid: 30fff26200f18854d95bbffa45a1e344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 961560623}
@@ -8103,7 +8102,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 961560619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38474037e13738d44988af89790fea12, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cc1b5110bda79d41bb6c0f18c9400de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivityX: 5
@@ -8119,7 +8118,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 961560619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c556a248e22c43e488bad796828d10df, type: 3}
+  m_Script: {fileID: 11500000, guid: 674472760e2f1f04280deff3a8e7fe2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 961560620}
@@ -8158,18 +8157,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &961560625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961560619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5123e39d66c7c194587414600a821da8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &966924197
 GameObject:
   m_ObjectHideFlags: 0
@@ -8543,6 +8530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd54702f72569b43b5310a3e1bb5ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseLook: {fileID: 961560621}
   panel: {fileID: 1397746798}
   stones:
   - {fileID: 641973196}
@@ -21544,7 +21532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63f9e0be570b4894c886268f754f907a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouse: {fileID: 961560621}
+  mouse: {fileID: 0}
   clue2Img: {fileID: 417663659}
 --- !u!64 &2142001708
 MeshCollider:

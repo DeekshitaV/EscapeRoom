@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace SpaceCodes
-{
     public class DoorPopUp : MonoBehaviour
     {
         public MouseLook mouse;
@@ -55,5 +53,4 @@ namespace SpaceCodes
             Cursor.lockState = CursorLockMode.Locked;
         }
     }
-}
 
