@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Temple
-{
+
     public class Door1Code : MonoBehaviour
     {
         public MouseLook mouse;
@@ -56,4 +55,4 @@ namespace Temple
             Cursor.lockState = CursorLockMode.Locked;
         }
     }
-}
+

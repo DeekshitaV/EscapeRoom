@@ -16197,6 +16197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd54702f72569b43b5310a3e1bb5ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseLook: {fileID: 1551684793}
   panel: {fileID: 8816454}
   stones:
   - {fileID: 840750167}
@@ -37423,7 +37424,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1551684791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b80f0fc3f527b54d9467e1352ba0615, type: 3}
+  m_Script: {fileID: 11500000, guid: 30fff26200f18854d95bbffa45a1e344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1551684795}
@@ -37442,7 +37443,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1551684791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff876c424e104fe49a2b68a4f7ae628d, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cc1b5110bda79d41bb6c0f18c9400de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivityX: 8
@@ -37458,7 +37459,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1551684791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8ed5c31957b09b43b01f152a77a6026, type: 3}
+  m_Script: {fileID: 11500000, guid: 674472760e2f1f04280deff3a8e7fe2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 1551684792}

@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Temple
-{
+
     public class textInput : MonoBehaviour
     {
         public MouseLook mouse;
@@ -118,4 +117,4 @@ namespace Temple
         }   
     }
 
-}
+
