@@ -11119,6 +11119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cd54702f72569b43b5310a3e1bb5ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseLook: {fileID: 1055923458}
   panel: {fileID: 1822073464}
   stones:
   - {fileID: 763985843}

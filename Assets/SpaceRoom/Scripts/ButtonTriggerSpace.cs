@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace SpaceRoom
-{
-    public class ButtonTrigger : MonoBehaviour
+
+    public class ButtonTriggerSpace : MonoBehaviour
     {
         public InputField answer;
         static int count = 0;
@@ -23,6 +22,7 @@ namespace SpaceRoom
             {
                 count++;
                 mouseLook.enabled = true;
+                Cursor.visible = false;
                 Debug.Log("You did it!");
                 //  MyAnimationController.SetBool("open", true);
                 Correct.Play();
@@ -49,4 +49,4 @@ namespace SpaceRoom
 
     }
 
-}
+
