@@ -5,8 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
-namespace Temple
-{
+
     public class @PlayerControls : IInputActionCollection, IDisposable
     {
         public InputActionAsset asset { get; }
@@ -318,4 +317,3 @@ namespace Temple
         }
     }
 
-}
