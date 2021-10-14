@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Clue2Appear : MonoBehaviour
 {
-    public MouseLook mouseLook;
+
     [SerializeField]
     private Image clue2Img;
     // Start is called before the first frame update
@@ -13,7 +13,6 @@ public class Clue2Appear : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            mouseLook.enabled = false;
             clue2Img.enabled = true;
         }
     }
@@ -22,7 +21,6 @@ public class Clue2Appear : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            mouseLook.enabled = true;
             clue2Img.enabled = false;
         }
     }
