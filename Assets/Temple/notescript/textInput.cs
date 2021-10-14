@@ -36,7 +36,7 @@ using UnityEngine.UI;
         public void OnClickClue1()
         {
            
-                if (inputField[0].text == answers[0])
+                if (inputField[0].text.ToLower() == answers[0].ToLower())
                 {
                     Correct.Play();
                     doors[0].SetActive(false);
@@ -57,7 +57,7 @@ using UnityEngine.UI;
         public void OnClickClue2()
         {
             
-            if (inputField[1].text == answers[1])
+            if (inputField[1].text.ToLower() == answers[1].ToLower())
             {
                 Correct.Play();
                 doors[1].SetActive(false);
@@ -78,7 +78,7 @@ using UnityEngine.UI;
         public void OnClickClue3()
         {
             
-            if (inputField[2].text == answers[2])
+            if (inputField[2].text.ToLower() == answers[2].ToLower())
             {
                 Correct.Play();
                 doors[2].SetActive(false);
@@ -99,7 +99,7 @@ using UnityEngine.UI;
         public void OnClickClue4()
         {
            
-            if (inputField[3].text == answers[3])
+            if (inputField[3].text.ToLower() == answers[3].ToLower())
             {
                 Correct.Play();
                 doors[3].SetActive(false);
