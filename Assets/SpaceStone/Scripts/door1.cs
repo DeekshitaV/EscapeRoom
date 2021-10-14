@@ -6,13 +6,13 @@ namespace SpaceCodes
 {
     public class door1 : MonoBehaviour
     {
-        [SerializeField] private Animator MyAnimationController;
+      //  [SerializeField] private Animator MyAnimationController;
 
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Player"))
-                MyAnimationController.SetBool("playopen", true);
-        }
+        // private void OnTriggerEnter(Collider other)
+        // {
+        //     if (other.CompareTag("Player"))
+        //         MyAnimationController.SetBool("playopen", true);
+        // }
     }
 
 }
