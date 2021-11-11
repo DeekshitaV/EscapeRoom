@@ -14,7 +14,7 @@ using UnityEngine.UI;
         public GameObject Collider;
         public GameObject popup;
         public GameObject stone;
-        string[] actualAns = { "144", "190", "114", "7650" };
+        string[] actualAns = { "Brooklyn", "Peggy Carter", "Captain America", "Iron Man" };
 
         public void onSubmit(int i)
         {
