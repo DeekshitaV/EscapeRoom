@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Keypad : MonoBehaviour
 {
 
-    public string curPassword = "29";
+    public string curPassword = "042";
     public string input;
     public bool onTrigger;
     public bool doorOpen;
