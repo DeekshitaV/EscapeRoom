@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.28557727, g: 0.40948808, b: 0.6420185, a: 1}
+  m_IndirectSpecularColor: {r: 0.28594276, g: 0.40987608, b: 0.64222765, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -23342,6 +23342,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HelpCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 841585121310171917, guid: ee7ad2d20d184b74688fa5f91895fa53,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee7ad2d20d184b74688fa5f91895fa53, type: 3}

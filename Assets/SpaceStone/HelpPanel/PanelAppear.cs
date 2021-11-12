@@ -8,6 +8,14 @@ public class PanelAppear : MonoBehaviour
     public GameObject help;
     public MouseLook mouse;
     public GameObject canvas;
+
+    private void Start()
+    {
+        help.SetActive(true);
+        canvas.SetActive(false);
+        mouse.enabled = false;
+        ShowCursor();
+    }
     // Update is called once per frame
     void Update()
     {
